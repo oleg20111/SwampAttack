@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class Player : MonoBehaviour
     private int _currentHealt;
     private Animator _animator;
 
+    public int Money { get; private set; }
+
     private void Start()
     {
         _currentWeapon = _weapons[0];
@@ -20,12 +23,23 @@ public class Player : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
+    internal void ApplyDamage(int damage)
+    {
+        _currentHealt -= damage;
+        if (_currentHealt <= 0)
+            Destroy(gameObject);
+    }
+
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             _currentWeapon.Shoot(_shootPoint);
         }
     }
-    
+
+    private void OnEnemyDied(int reward)
+    {
+        Money += reward;
+    }
 }
