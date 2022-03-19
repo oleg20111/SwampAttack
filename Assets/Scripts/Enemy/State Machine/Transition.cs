@@ -13,7 +13,7 @@ public abstract class Transition : MonoBehaviour
 
     public bool NeedTransit { get; protected set; }
 
-    internal void Init(Player target)
+    public void Init(Player target)
     {
         Target = target;
     }
