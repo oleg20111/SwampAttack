@@ -36,21 +36,24 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Player\Player.cs" />
-     <Compile Include="Assets\Scripts\Weapon\Weapon.cs" />
-     <Compile Include="Assets\Scripts\Weapon\Bullet.cs" />
      <Compile Include="Assets\Scripts\Weapon\Pistol.cs" />
-     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
      <Compile Include="Assets\Scripts\Enemy\State Machine\EnemyStateMachine.cs" />
-     <Compile Include="Assets\Scripts\Enemy\State Machine\State.cs" />
-     <Compile Include="Assets\Scripts\Enemy\State Machine\Transition.cs" />
-     <Compile Include="Assets\Scripts\Enemy\State Machine\Transition\DistanceTransition.cs" />
-     <Compile Include="Assets\Scripts\Enemy\State Machine\Transition\TargetDieTransition.cs" />
-     <Compile Include="Assets\Scripts\Enemy\MoveState.cs" />
      <Compile Include="Assets\Scripts\Enemy\AttackState.cs" />
-     <Compile Include="Assets\Scripts\Enemy\CelebrationsState.cs" />
-     <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\Enemy\State Machine\Transition\DistanceTransition.cs" />
      <Compile Include="Assets\Scripts\UI\NextWaveButton.cs" />
+     <Compile Include="Assets\Scripts\UI\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\UI\Bar.cs" />
+     <Compile Include="Assets\Scripts\Enemy\State Machine\Transition.cs" />
+     <Compile Include="Assets\Scripts\Weapon\Weapon.cs" />
+     <Compile Include="Assets\Scripts\Enemy\MoveState.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\State Machine\Transition\TargetDieTransition.cs" />
+     <Compile Include="Assets\Scripts\Enemy\CelebrationsState.cs" />
+     <Compile Include="Assets\Scripts\Enemy\State Machine\State.cs" />
+     <Compile Include="Assets\Scripts\Weapon\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\UI\ProgressBar.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
